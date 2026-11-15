@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+      "initiatorDomains": ["pinaytg.com", "garpf.com", "lootedpinay.com"],
+      "requestDomains": [
+        "vitting.org",
+        "js.mbidpp.com",
+        "js.mbidadm.com",
+        "spotlessshift.com",
+        "www.loosesection.com",
+        "namebrain.org",
+        "ethnicexpressions.org"
+      ],
+      "resourceTypes": ["main_frame", "sub_frame", "script", "xmlhttprequest", "ping", "image", "other"]
+    }
+  }
+]

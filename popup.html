@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamLift</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="brand">
+    <img src="icons/48.png" alt="" width="42" height="42">
+    <div><h1>StreamLift</h1><p>Video downloader</p></div>
+  </header>
+  <main>
+    <section class="download-panel" aria-label="Current video">
+      <div class="panel-header"><h2 id="current-site">Current page</h2><span class="protection"><span aria-hidden="true">●</span> Popup protection</span></div>
+      <p id="status" role="status" aria-live="polite">Open a supported video page to get started.</p>
+      <label for="source">Video source</label>
+      <select id="source"><option value="auto">Automatic · MP4 first</option></select>
+      <button id="download" class="primary" disabled><span aria-hidden="true">↓</span> Download video</button>
+      <progress id="progress" max="100" aria-label="Download progress" hidden></progress>
+      <button id="permission" class="permission" hidden>Allow video host</button>
+      <button id="cancel" class="secondary" hidden>Cancel download</button>
+    </section>
+    <section class="sites" aria-labelledby="supported-sites">
+      <h2 id="supported-sites">Supported websites</h2>
+      <ul>
+        <li><span class="site-mark" aria-hidden="true">P</span><div><strong>PinayTG</strong><span>pinaytg.com</span></div><span class="site-state" id="site-pinaytg">Supported</span></li>
+        <li><span class="site-mark" aria-hidden="true">L</span><div><strong>LootedPinay</strong><span>lootedpinay.com</span></div><span class="site-state" id="site-lootedpinay">Supported</span></li>
+        <li><span class="site-mark" aria-hidden="true">G</span><div><strong>Garpf player</strong><span>garpf.com</span></div><span class="site-state" id="site-garpf">Supported</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer><button id="downloads" class="text-button">Open Chrome downloads <span aria-hidden="true">↗</span></button></footer>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
